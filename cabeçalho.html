@@ -1,0 +1,472 @@
+<style>
+    :root {
+        --pfp: url("https://cosmicwolf.carrd.co/assets/images/image01.jpg?v=d80ac98f")
+    }
+</style>
+
+<div class="logoCosmic">
+    <div class="pfp"></div>
+    <H1 text="COSMIC WOLF">COSMIC WOLF</H1>
+    <p>DESIGNER | ILLUSTRATOR | CONCEPT ARTIST</p>
+    <div class="buttons">
+        <a href="https://twitter.com/cosmicwolf_arts" text=""><img
+                src="https://github.com/ItsAMeDoug/cosmicwolf-webpage/raw/main/twitter.png"></a>
+        <a href="https://www.instagram.com/cosmicwolf_arts/" text=""><img
+                src="https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/instagram.png"></a>
+        <a href="https://www.artstation.com/biancaalvarenga" text=""><img
+                src="https://github.com/ItsAMeDoug/cosmicwolf-webpage/raw/main/artstation.png"></a>
+        <a href="https://discord.gg/9Cmj55HPuC" text=""><img
+                src="https://github.com/ItsAMeDoug/cosmicwolf-webpage/raw/main/discord.png"></a>
+        <a href="https://trello.com/b/DNgOVx17/cosmic-to-do-list" text=""><img
+                src="https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/trello.png"></a>
+    </div>
+</div>
+
+<style>
+    body {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .pfp {
+        margin: auto;
+        position: relative;
+
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+
+        background: conic-gradient(from var(--angle),
+                #fd39ae 0deg 140deg,
+                #ffda56 180deg 340deg,
+                #fd39ae);
+        box-shadow: 0 0 15px #e961c79a;
+        margin-bottom: px;
+        animation: 20s rotate linear infinite;
+
+    }
+
+    .pfp::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+
+        background: var(--pfp);
+        background-size: contain;
+        margin: auto;
+
+        z-index: 0;
+        width: 192px;
+        height: 192px;
+        border-radius: 50%;
+    }
+
+    .logoCosmic .pfp,
+    .logoCosmic h1,
+    .logoCosmic p {
+        animation: 3.33s intro3 linear;
+    }
+
+    .logoCosmic:before,
+    .logoCosmic:after {
+        content: "";
+        position: absolute;
+        top: calc(50% - 230px);
+        left: calc(50% - 260px);
+        width: 520px;
+        padding-bottom: 330px;
+
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .logoCosmic:before {
+        z-index: 2;
+        clip-path: var(--slice-0);
+        --slice-0: inset(50% 50% 50% 50%);
+        --slice-1: inset(80% -6px 0 0);
+        --slice-2: inset(50% -6px 30% 0);
+        --slice-3: inset(-10% -6px 85% 0);
+        --slice-4: inset(-40% 6px 43% 0);
+        --slice-5: inset(80% -6px 5% 0);
+
+
+        animation: 7s glitch, 1s intro2;
+        animation-delay: 3s;
+        animation-timing-function: steps(2, end), linear;
+    }
+
+    .logoCosmic:after {
+        z-index: 1;
+        animation: 5s intro1;
+    }
+
+    .logoCosmic h1,
+    .logoCosmic h1:before {
+        position: relative;
+        color: transparent;
+        font-family: 'Exo 2 Italic Bold', sans-serif;
+        text-transform: capitalize;
+        font-size: 70;
+        -webkit-text-stroke: 2px #f7e6fc;
+        line-height: 1;
+        margin: 0;
+
+        filter: drop-shadow(0 0 5px #bf00ffa2) drop-shadow(0 0 10px #bf00ff) drop-shadow(0 0 20px #dd88fabb);
+    }
+
+    .logoCosmic h1:before {
+        content: attr(text);
+        position: absolute;
+        filter: unset;
+
+        animation: 7s glitch infinite;
+        animation-timing-function: steps(2, end);
+        animation-delay: 7s;
+
+        clip-path: var(--slice-0);
+        --slice-0: inset(50% 50% 50% 50%);
+        --slice-1: inset(80% -6px 0 0);
+        --slice-2: inset(50% -6px 30% 0);
+        --slice-3: inset(-10% -6px 85% 0);
+        --slice-4: inset(-40% 6px 43% 0);
+        --slice-5: inset(80% -6px 5% 0);
+    }
+
+    .logoCosmic p {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 600;
+        color: #f7e6fc;
+        margin: 7px;
+        font-size: 20px;
+        filter: drop-shadow(0 0 5px #bf00ff88) drop-shadow(0 0 10px #dd88fa80);
+    }
+
+    @media (max-width: 460px) {
+
+        .pfp {
+            width: 150px;
+            height: 150px;
+        }
+
+        .pfp::before {
+            width: 142px;
+            height: 142px;
+        }
+
+        .logoCosmic h1,
+        .logoCosmic h1:before {
+            font-size: 50;
+            filter: drop-shadow(0 0 5px #bf00ff) drop-shadow(0 0 10px #dd88faef);
+            -webkit-text-stroke: 1.5px #f7e6fc;
+        }
+
+        .logoCosmic p {
+            font-size: 15px;
+        }
+
+        .logoCosmic:before,
+        .logoCosmic:after {
+            width: 350px;
+            top: calc(50% - 230px);
+            left: calc(50% - 175px);
+        }
+
+    }
+
+
+    .buttons {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        margin: 0;
+        width: 100vw;
+        height: 100px;
+        overflow: hidden;
+
+        animation: 5s fadeIn;
+
+    }
+
+    .buttons a {
+
+        text-decoration: none !important;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+
+        background: var(--bg);
+
+        position: relative;
+        padding: 13px 20px;
+
+
+        line-height: 3.2;
+        margin: 0 5px;
+
+    }
+
+    .buttons img {
+        margin-bottom: -4px;
+
+        width: 16px
+    }
+
+    @media (min-height: 100px) {
+
+        .buttons a {
+            line-height: 3.9;
+            margin: 5px;
+        }
+
+        .buttons a:hover:after {
+            content: attr(text);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            text-decoration: none !important;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: 'Comfortaa', sans-serif;
+            font-size: 14px;
+            line-height: 1;
+            color: #ffffff;
+
+            background: var(--bg);
+            padding: 13px 30px;
+
+            animation: 7s glitch;
+            animation-timing-function: steps(2, end);
+
+            clip-path: var(--slice-0);
+            --slice-0: inset(50% 50% 50% 50%);
+            --slice-1: inset(80% -6px 0 0);
+            --slice-2: inset(50% -6px 30% 0);
+            --slice-3: inset(-10% -6px 85% 0);
+            --slice-4: inset(-40% 6px 43% 0);
+            --slice-5: inset(80% -6px 5% 0);
+
+        }
+
+        .buttons a:hover:before {
+            content: "🥼 " attr(text);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            padding: 11px 16px;
+            line-height: 1;
+
+            border: 3px solid;
+            border-image: linear-gradient(135deg,
+                    transparent 5px,
+                    #ffda56 5px,
+                    #fd39ae var(--gr),
+                    #891cac calc(100% - 5px),
+                    transparent calc(100% - 5px) 100%) 1;
+            filter: blur(8px)
+        }
+    }
+
+    /* Fundo padrão */
+    :root {
+
+        --bg: linear-gradient(135deg,
+                transparent 6px,
+                #461855 6px,
+                #000000 calc(var(--gr) + 10px),
+                #000000 calc(100% - 6px),
+                transparent calc(100% - 6px) 100%) no-repeat center / calc(100% - 6px) calc(100% - 6px),
+
+            linear-gradient(135deg,
+                transparent 7px,
+                #ffda56 7px,
+                #fd39ae var(--gr),
+                #891cac calc(100% - 7px),
+                transparent calc(100% - 7px) 100%) no-repeat center / 100%;
+        animation: 5s btGrMovement infinite;
+    }
+
+    /* Efeito de glitch */
+    @keyframes glitch {
+
+        0% {
+            clip-path: var(--slice-1);
+            transform: translate(-20px, -10px);
+        }
+
+        1% {
+            clip-path: var(--slice-3);
+            transform: translate(10px, 10px);
+        }
+
+        2% {
+            clip-path: var(--slice-1);
+            transform: translate(-10px, 10px);
+            filter: hue-rotate(120deg) saturate(1.3);
+        }
+
+        3% {
+            clip-path: var(--slice-3);
+            transform: translate(0px, 5px);
+        }
+
+        4% {
+            clip-path: var(--slice-2);
+            transform: translate(-5px, 0px);
+        }
+
+        5% {
+            clip-path: var(--slice-3);
+            transform: translate(5px, 0px);
+        }
+
+        6% {
+            clip-path: var(--slice-4);
+            transform: translate(5px, 10px);
+            filter: hue-rotate(270deg) saturate(1.3);
+        }
+
+        7% {
+            clip-path: var(--slice-2);
+            transform: translate(-10px, 10px);
+        }
+
+        8% {
+            clip-path: var(--slice-5);
+            transform: translate(20px, -10px);
+        }
+
+        9% {
+            clip-path: var(--slice-1);
+            transform: translate(-10px, 0px);
+        }
+
+        10% {
+            clip-path: var(--slice-1);
+            transform: translate(0);
+        }
+
+        11% {
+            clip-path: var(--slice-0)
+        }
+
+    }
+
+    /* Movimento de gradiente */
+    @property --gr {
+        initial-value: 25%;
+        inherits: false;
+        syntax: '<percentage>';
+    }
+
+    @keyframes btGrMovement {
+
+        50% {
+            --gr: 75%
+        }
+
+        100% {
+            --gr: 25%
+        }
+    }
+
+    @property --angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    @keyframes intro1 {
+        0% {
+            background-image: url("https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/Logo.png");
+            opacity: 0%;
+            background-size: 70%;
+        }
+
+        50% {
+            opacity: 100%;
+        }
+
+        64% {
+            background-image: url("https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/Logo.png");
+
+        }
+
+        65% {
+            background-size: 100%;
+            background-image: unset;
+        }
+
+    }
+
+    @keyframes intro2 {
+
+        0%,
+        49% {
+            background-image: url("https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/logo%20glitched.png");
+        }
+
+        50% {
+            background-image: url("https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/Logo%20glitched%202.png");
+        }
+    }
+
+    @keyframes intro3 {
+
+        0%,
+        99.9% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+
+    }
+
+    @keyframes fadeIn {
+
+        0%,
+        80% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+
+
+    @keyframes rotate {
+        to {
+            --angle: 360deg;
+        }
+    }
+
+    @font-face {
+        font-family: 'Exo 2 Italic Bold';
+        src: url(https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/Exo2%20SemiBoldItalic%20Fixed.otf) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet">

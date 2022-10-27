@@ -1,0 +1,199 @@
+<div>
+    <a href="google.com" text="Link legal"><img src="https://lh3.googleusercontent.com/pw/AL9nZEU805RjbQ_4oJzc4oQBzk_Rflrm5qb-PldvSP7wZo9NErKJanNLTBUagPldtV5n8vWn0jmCzUiWxtkl_8Bb_-ljk26iq5DsjKNjj5ock10uCkS3jZVlL1bchyXAuFnd5DIelL1pfl2Xn-NJ9_0QDEgoCA=w275-h280-no"> Link legal</a>
+</div>
+
+
+<style>
+    body {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+
+    }
+
+    a {
+
+        text-decoration: none !important;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 14px;
+        line-height: 1;
+        color: #ffffff;
+
+        background: var(--bg);
+
+        position: relative;
+        padding: 13px 23px;
+
+    }
+
+    img {
+        margin-bottom: -3px;
+        padding-right: 5px;
+        width: 16px
+    }
+
+    @media (min-height: 60px) {
+
+        a:hover:after {
+            content: attr(text);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            text-decoration: none !important;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: 'Comfortaa', sans-serif;
+            font-size: 14px;
+            line-height: 1;
+            color: #ffffff;
+
+            background: var(--bg);
+            padding: 13px 35px;
+
+             animation: 0.7s glitch;
+            animation-timing-function: steps(2, end);
+
+            clip-path: var(--slice-0);
+            --slice-0: inset(50% 50% 50% 50%);
+            --slice-1: inset(80% -6px 0 0);
+            --slice-2: inset(50% -6px 30% 0);
+            --slice-3: inset(-10% -6px 85% 0);
+            --slice-4: inset(-40% 6px 43% 0);
+            --slice-5: inset(80% -6px 5% 0); 
+
+        }
+
+        a:hover:before {
+            content: "🥼 " attr(text);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            padding: 11px 21px;
+            line-height: 1;
+            
+            border: 3px solid;
+            border-image: linear-gradient(135deg,
+                transparent 5px,
+                #ffda56 5px,
+                #fd39ae var(--gr),
+                #891cac calc(100% - 5px),
+                transparent calc(100% - 5px) 100%) 1;
+              filter: blur(8px) 
+             
+        }
+    }
+
+    /* Fundo padrão */
+    :root {
+
+        --bg: linear-gradient(135deg,
+                transparent 6px,
+                #461855 6px,
+                #000000 calc(var(--gr) + 10px),
+                #000000 calc(100% - 6px),
+                transparent calc(100% - 6px) 100%) no-repeat center / calc(100% - 6px) calc(100% - 6px),
+
+            linear-gradient(135deg,
+                transparent 7px,
+                #ffda56 7px,
+                #fd39ae var(--gr),
+                #891cac calc(100% - 7px),
+                transparent calc(100% - 7px) 100%) no-repeat center / 100%;
+        animation: 5s grMovement infinite;
+    }
+
+    /* Efeito de glitch */
+    @keyframes glitch {
+
+        0% {
+            clip-path: var(--slice-1);
+            transform: translate(-20px, -10px);
+        }
+
+        10% {
+            clip-path: var(--slice-3);
+            transform: translate(10px, 10px);
+        }
+
+        20% {
+            clip-path: var(--slice-1);
+            transform: translate(-10px, 10px);
+            filter: hue-rotate(120deg) saturate(1.3);
+        }
+
+        30% {
+            clip-path: var(--slice-3);
+            transform: translate(0px, 5px);
+        }
+
+        40% {
+            clip-path: var(--slice-2);
+            transform: translate(-5px, 0px);
+        }
+
+        50% {
+            clip-path: var(--slice-3);
+            transform: translate(5px, 0px);
+        }
+
+        60% {
+            clip-path: var(--slice-4);
+            transform: translate(5px, 10px);
+            filter: hue-rotate(270deg) saturate(1.3);
+        }
+
+        70% {
+            clip-path: var(--slice-2);
+            transform: translate(-10px, 10px);
+        }
+
+        80% {
+            clip-path: var(--slice-5);
+            transform: translate(20px, -10px);
+        }
+
+        90% {
+            clip-path: var(--slice-1);
+            transform: translate(-10px, 0px);
+        }
+
+        100% {
+            clip-path: var(--slice-1);
+            transform: translate(0);
+        }
+
+    }
+
+    /* Movimento de gradiente */
+    @property --gr {
+        initial-value: 25%;
+        inherits: false;
+        syntax: '<percentage>';
+    }
+
+    @keyframes grMovement {
+
+        50% {
+            --gr: 75%
+        }
+
+        100% {
+            --gr: 25%
+        }
+    }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">

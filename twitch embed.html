@@ -1,0 +1,159 @@
+<script>
+    var live = "cosmicwolf_arts"
+</script>
+
+
+<div id="twitch-embed">
+    <div id="offline">
+
+        <div>
+            <span>Acompanhe minhas lives pela Twitch na Segunda, Terça, Quinta e Sexta, a partir das 20:00hrs!</span>
+            <img src="https://lh3.googleusercontent.com/pw/AL9nZEXx092TdFDC9kIzluMttjJourBfJZD4kIQKYGnZRc5PCa6w8Fx7kvYYvDrIr_ALJ4ZW4WKRcJQhp9OTnb1xaAdQ7v_g0AzHeG6mB7-OR7IoFJaO9mdvEeNF0F6YHDuhn-tgAdPDaUma7-PVjt4cFEghbw=w950-h1000-no">
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+<script type="text/javascript">
+    var player = new Twitch.Embed("twitch-embed", {
+        channel: live,
+        layout: "video",
+        muted: true,
+        parent: ['sites.google.com', 'www.gstatic.com', window.location.host]
+    });
+
+    player.addEventListener(Twitch.Player.ONLINE,() => {
+            document.getElementsByTagName('iframe')[0].style.display = "inline";
+            document.getElementById("offline").style.display = "none";
+    })
+
+</script>
+
+<style>
+    #twitch-embed {
+
+        margin: 20px;
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        border-radius: 20px;
+
+        padding: 3px;
+
+
+
+        background:
+            conic-gradient(from var(--angle),
+                #fd39ae 0deg 85deg,
+                #ffda56 90deg 175deg,
+                #fd39ae 180deg 265deg,
+                #ffda56 270deg 355deg,
+                #fd39ae 360deg 360deg);
+
+        animation: 30s rotate linear infinite;
+    }
+    #twitch-embed:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+
+        border: 3px solid;
+        border-image:
+            conic-gradient(from var(--angle),
+                #fd39ae 0deg 85deg,
+                #ffda56 90deg 175deg,
+                #fd39ae 180deg 265deg,
+                #ffda56 270deg 355deg,
+                #fd39ae 360deg 360deg) 1;
+        
+        filter: blur(8px);
+                
+        animation: 30s rotate linear infinite;
+
+        }
+
+
+
+    iframe, #offline {
+
+        width: 100%;
+        height: 100%;
+        border-radius: 17px;
+
+
+    }
+
+    iframe {
+        display: none;
+    }
+
+    #offline {
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(#000000bd,#000000bd), url('https://lh3.googleusercontent.com/pw/AL9nZEXlWI61DRG3mQjelyD-WZ-ZViDtnQczFClAp33R0I_z1EuuVJTK-Xpg34T-w3nBu96FsCQjm5dTQCdG_q7M5DySikiDtLkQmNS-mXOyNIcuvHITAsevaSSUY8cjqkU-7eksW1t9-MSuilk6HHKf_bt8Vw=w800-h453-no');
+        background-color: #000;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #offline div {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding: 25px;
+        max-width: 500px;
+        justify-content: center;
+    }
+    #offline div span {
+        font-size: 20px;
+        font-family: 'Comfortaa';
+        color:#fff;
+        margin: auto;
+    }
+    #offline div img {
+        width: 150px;
+        filter: drop-shadow(0 0 50px #000);
+    }
+    @media (max-width:480px) {
+        #offline div img {
+            width: 50px;
+        }
+        #offline div span {
+            font-size: 12px;
+        }
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+    @property --angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    @keyframes rotate {
+        to {
+            --angle: 360deg;
+        }
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
