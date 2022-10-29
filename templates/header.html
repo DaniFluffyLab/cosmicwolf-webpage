@@ -67,8 +67,7 @@
                     #ffda56 180deg 340deg,
                     #fd39ae);
             box-shadow: 0 0 15px #e961c79a;
-            margin-bottom: px;
-            animation: 20s rotate linear infinite;
+            animation: 20s rotate linear infinite, 3.53s intro3 linear;
 
         }
 
@@ -79,16 +78,17 @@
             left: 4px;
 
             background: var(--pfp);
-            background-size: contain;
+            background-size: cover;
             margin: auto;
 
             z-index: 0;
             width: 192px;
             height: 192px;
             border-radius: 50%;
+            rotate: var(--angle);
+            animation: var(--speed);
         }
 
-        .logoCosmic .pfp,
         .logoCosmic h1,
         .logoCosmic p {
             animation: 3.53s intro3 linear;
@@ -134,8 +134,7 @@
         .logoCosmic h1:before {
             position: relative;
             color: transparent;
-            font-family: 'Exo 2 Italic Bold', sans-serif;
-            text-transform: capitalize;
+            font-family: var(--exo2);
             font-size: 70;
             -webkit-text-stroke: 2px #f7e6fc;
             line-height: 1;
@@ -309,7 +308,7 @@
             --bg: linear-gradient(135deg,
                     transparent 6px,
                     #461855 6px,
-                    #000000 calc(var(--gr) + 10px),
+                    #000000 calc(var(--gr) + 3px),
                     #000000 calc(100% - 6px),
                     transparent calc(100% - 6px) 100%) no-repeat center / calc(100% - 6px) calc(100% - 6px),
 
@@ -493,7 +492,39 @@
             font-weight: normal;
             font-style: normal;
         }
+        :root {
+            --exo2: 'Exo 2 Italic Bold', sans-serif;
+            --speed: 'unset'
+        }
     </style>
 
     <script> document.onload(document.body.setAttribute("style", ""))</script>
+
+
 </body>
+
+<script>
+
+    var egg = undefined;
+
+    document.addEventListener('keydown', (event) => {
+
+        var name = event.key;
+        var code = event.code;
+        // Alert the key name and key code on keydown
+        console.log(`Key pressed ${name} \r\n Key code value: ${code}`);
+        egg = egg + code
+        egg = egg.slice(-83)
+
+        if (egg == "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightKeyBKeyAEnter") {
+            document.documentElement.style.setProperty('--pfp', "url(https://media.discordapp.net/attachments/908801570123169802/908818674004144128/bixim_02.png)")
+            document.documentElement.style.setProperty('--exo2', "'Comic Sans MS', sans-serif")
+            document.documentElement.style.setProperty('--speed', "7s rotate linear infinite")
+            document.getElementsByClassName("logoCosmic")[0].getElementsByTagName("h1")[0].innerHTML = "blog do rabs"
+            document.getElementsByClassName("logoCosmic")[0].getElementsByTagName("h1")[0].setAttribute("text","blog do rabs")
+            console.log("🥚")
+        }
+
+    }, false);
+
+</script>
