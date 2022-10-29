@@ -511,8 +511,6 @@
 
         var name = event.key;
         var code = event.code;
-        // Alert the key name and key code on keydown
-        console.log(`Key pressed ${name} \r\n Key code value: ${code}`);
         egg = egg + code
         egg = egg.slice(-83)
 
@@ -522,7 +520,6 @@
             document.documentElement.style.setProperty('--speed', "7s rotate linear infinite")
             document.getElementsByClassName("logoCosmic")[0].getElementsByTagName("h1")[0].innerHTML = "blog do rabs"
             document.getElementsByClassName("logoCosmic")[0].getElementsByTagName("h1")[0].setAttribute("text","blog do rabs")
-            console.log("🥚")
         }
 
     }, false);
