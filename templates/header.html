@@ -40,6 +40,7 @@
             <a href="https://trello.com/b/DNgOVx17/cosmic-to-do-list" text="">
                 <img src="https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/icons/trello.png" alt="Trello"></a>
         </div>
+        <p style="text-align: center;"><a class="mobile" style="color: #fff!important" href="https://sites.google.com/view/cosmicwolf">Ver em português</a></p>
     </div>
 
     <style>
@@ -496,6 +497,18 @@
             --exo2: 'Exo 2 Italic Bold', sans-serif;
             --speed: 'unset'
         }
+
+        .mobile {
+            display: none;
+            animation: 5.5s fadeIn;
+        }
+
+        @media only screen and (hover: none) and (pointer: coarse){
+
+            .mobile {
+                display: inline;
+            }
+}
     </style>
 
     <script> document.onload(document.body.setAttribute("style", ""))</script>
