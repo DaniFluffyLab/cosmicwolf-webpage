@@ -8,7 +8,7 @@
 
         <div>
             <span>Acompanhe minhas lives pela Twitch na Segunda, Terça, Quinta e Sexta, a partir das 20:00hrs!</span>
-            <img src="https://lh3.googleusercontent.com/pw/AL9nZEXx092TdFDC9kIzluMttjJourBfJZD4kIQKYGnZRc5PCa6w8Fx7kvYYvDrIr_ALJ4ZW4WKRcJQhp9OTnb1xaAdQ7v_g0AzHeG6mB7-OR7IoFJaO9mdvEeNF0F6YHDuhn-tgAdPDaUma7-PVjt4cFEghbw=w950-h1000-no">
+            <img src="https://github.com/ItsAMeDoug/cosmicwolf-webpage/raw/main/embed-twitch/rabscleido.png">
         </div>
 
     </div>
@@ -33,7 +33,7 @@
 
 <style>
     #twitch-embed {
-
+        z-index: 0;
         margin: 20px;
         width: calc(100% - 40px);
         height: calc(100% - 40px);
@@ -53,15 +53,17 @@
 
         animation: 30s rotate linear infinite;
     }
-    #twitch-embed:after {
+
+    #twitch-embed:before {
+        z-index: -1;
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
-        left: 20px;
+        top: 25px;
+        left: 25px;
 
-        width: calc(100% - 40px);
-        height: calc(100% - 40px);
+        width: calc(100% - 50px);
+        height: calc(100% - 50px);
 
         border: 3px solid;
         border-image:
@@ -72,7 +74,7 @@
                 #ffda56 270deg 355deg,
                 #fd39ae 360deg 360deg) 1;
         
-        filter: blur(8px);
+        filter: blur(10px);
                 
         animation: 30s rotate linear infinite;
 
@@ -96,7 +98,7 @@
     #offline {
         display: flex;
         justify-content: center;
-        background-image: linear-gradient(#000000bd,#000000bd), url('https://lh3.googleusercontent.com/pw/AL9nZEXlWI61DRG3mQjelyD-WZ-ZViDtnQczFClAp33R0I_z1EuuVJTK-Xpg34T-w3nBu96FsCQjm5dTQCdG_q7M5DySikiDtLkQmNS-mXOyNIcuvHITAsevaSSUY8cjqkU-7eksW1t9-MSuilk6HHKf_bt8Vw=w800-h453-no');
+        background-image: linear-gradient(#000000bd,#000000bd), url('https://github.com/ItsAMeDoug/cosmicwolf-webpage/raw/main/embed-twitch/offline-background.gif');
         background-color: #000;
         background-size: cover;
         background-position: center;
