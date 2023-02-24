@@ -2,21 +2,18 @@
     <!-- Todas as variáveis -->
     <style>
         :root {
-            --pfp: url("https://cosmicwolf.carrd.co/assets/images/image01.jpg?v=d80ac98f");
-            --logo: url("https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/header/logoNormal.png");
-            --logoGlitched: url("https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/header/logoGlitched.png");
-            --headerGlitched: url("https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/header/headerGlitched.png");
+            --pfp: url("https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/header/profilePicture.png");
+            --logo: url("https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/header/logoNormal.png");
+            --logoGlitched: url("https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/header/logoGlitched.png");
+            --headerGlitched: url("https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/header/headerGlitched.png");
         }
     </style>
 
     <!-- Pre-carregar elementos -->
-    <link rel="preload" as="image" href="https://cosmicwolf.carrd.co/assets/images/image01.jpg?v=d80ac98f">
-    <link rel="preload" as="image"
-        href="https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/header/logoNormal.png">
-    <link rel="preload" as="image"
-        href="https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/header/logoGlitched.png">
-    <link rel="preload" as="image"
-        href="https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/header/headerGlitched.png">
+    <link rel="preload" as="image" href="https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/header/profilePicture.png">
+    <link rel="preload" as="image" href="https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/header/logoNormal.png">
+    <link rel="preload" as="image" href="https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/header/logoGlitched.png">
+    <link rel="preload" as="image" href="https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/header/headerGlitched.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,23 +30,17 @@
         <p>DESIGNER | ILLUSTRATOR | CONCEPT ARTIST</p>
         <div class="buttons">
             <a href="https://twitter.com/cosmicwolf_arts" text="">
-                <img src="https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/icons/twitter.png"
-                    alt="Twitter"></a>
+                <img src="https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/icons/twitter.png" alt="Twitter"></a>
             <a href="https://www.instagram.com/cosmicwolf_arts/" text="">
-                <img src="https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/icons/instagram.png"
-                    alt="Instagram"></a>
+                <img src="https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/icons/instagram.png" alt="Instagram"></a>
             <a href="https://www.artstation.com/biancaalvarenga" text="">
-                <img src="https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/icons/artstation.png"
-                    alt="ArtStation"></a>
+                <img src="https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/icons/artstation.png" alt="ArtStation"></a>
             <a href="https://discord.gg/9Cmj55HPuC" text="">
-                <img src="https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/icons/discord.png"
-                    alt="Discord"></a>
+                <img src="https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/icons/discord.png" alt="Discord"></a>
             <a href="https://trello.com/b/DNgOVx17/cosmic-to-do-list" text="">
-                <img src="https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/icons/trello.png"
-                    alt="Trello"></a>
+                <img src="https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/icons/trello.png" alt="Trello"></a>
         </div>
-        <p style="text-align: center;"><a class="mobile" style="color: #fff!important"
-                href="https://sites.google.com/view/cosmicwolf">Ver em português</a></p>
+        <p style="text-align: center;"><a class="mobile" style="color: #fff!important" href="https://sites.google.com/view/cosmicwolf-en">See in english</a></p>
     </div>
 
     <style>
@@ -498,11 +489,10 @@
 
         @font-face {
             font-family: 'Exo 2 Italic Bold';
-            src: url("https://raw.githubusercontent.com/ItsAMeDoug/cosmicwolf-webpage/main/fonts/exo2_semiBoldItalic.otf") format('truetype');
+            src: url("https://raw.githubusercontent.com/danifluffylab/cosmicwolf-webpage/main/fonts/exo2_semiBoldItalic.otf") format('truetype');
             font-weight: normal;
             font-style: normal;
         }
-
         :root {
             --exo2: 'Exo 2 Italic Bold', sans-serif;
             --speed: 'unset'
@@ -513,12 +503,12 @@
             animation: 5.5s fadeIn;
         }
 
-        @media only screen and (hover: none) and (pointer: coarse) {
+        @media only screen and (hover: none) and (pointer: coarse){
 
             .mobile {
                 display: inline;
             }
-        }
+}
     </style>
 
     <script> document.onload(document.body.setAttribute("style", ""))</script>
@@ -542,7 +532,7 @@
             document.documentElement.style.setProperty('--exo2', "'Comic Sans MS', sans-serif")
             document.documentElement.style.setProperty('--speed', "7s rotate linear infinite")
             document.getElementsByClassName("logoCosmic")[0].getElementsByTagName("h1")[0].innerHTML = "blog do rabs"
-            document.getElementsByClassName("logoCosmic")[0].getElementsByTagName("h1")[0].setAttribute("text", "blog do rabs")
+            document.getElementsByClassName("logoCosmic")[0].getElementsByTagName("h1")[0].setAttribute("text","blog do rabs")
         }
 
     }, false);
