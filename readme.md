@@ -19,5 +19,6 @@ Os icones do ArtStation, Discord, Instagram, Trello, Twitch e Twitter são de ma
 
 Materiais artísticos são de propriedade de [Bianca Alvarenga](https://www.artstation.com/biancaalvarenga "Acessar ArtStation") e foram utilizados com consentimento da autora.
 
-Quanto ao código e seu uso, segue os termos de uso [inspirados na Licença Beerware](https://people.freebsd.org/~phk/#:~:text=Beerware%2C%20am%20I%20really%20serious%20%3F): 
-Faz o que você quiser com ele. Se a gente se encontrar qualquer dia, e você achar que eu te ajudei, você pode me pagar uma coxinha e um refri :)
+Quanto ao código e seu uso, segue os termos de uso [inspirados na Licença Beerware](https://people.freebsd.org/~phk/#:~:text=Beerware%2C%20am%20I%20really%20serious%20%3F):
+*Faz o que você quiser com ele.* Se a gente se encontrar qualquer dia, e você achar que eu te ajudei, você pode me pagar uma coxinha e um refri :)
+(eu não bebo •- •)
