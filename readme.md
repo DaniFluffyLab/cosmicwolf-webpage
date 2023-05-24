@@ -2,7 +2,7 @@
 
 ![](extras/readme-header.png)
 
-Neste repositório estão armazenados todos os assets necessários para o funcionamento dos painéis customizados no [site CosmicWolfArts](https://https://sites.google.com/view/cosmicwolf).
+Neste repositório estão armazenados todos os assets necessários para o funcionamento dos painéis customizados no [site CosmicWolfArts](https://cosmicwolf.net).
 
 Este projeto foi criado com o intuito de testar a ferramenta de criação de sites do Google e a viabilidade de uso de HTML/CSS nele, bem como aprender a estilizar e animar usando CSS. O código dos painéis foram inseridos na página com a função de *Incorporar código* e estão disponíveis na pasta `templates`:
 
